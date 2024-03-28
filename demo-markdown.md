@@ -26,9 +26,9 @@ Una herramienta de control de versiones se utiliza para mantener un registro de 
 
 Es importante tener en cuenta que la instalación de Git varía según el sistema operativo utilizado. Se recomienda visitar la página oficial de Git para encontrar la mejor manera de instalarlo según nuestras especificaciones.
 
-[Web oficial de Git](https://git-scm.com/)
+[Página oficial de Git](https://git-scm.com/)
 
-Una vez instalado, debemos configurar dos parámetros obligatorios antes de empezar a utilizar Git:
+Una vez instalado, debemos configurar dos parámetros obligatorios antes de empezar a utilizar Git, para ello podemos abrir la terminar bash que se ha instalado junto a Git y tecleamos las siguientes instrucciones:
 
 ```bash
 git config --global user.name "nombre usuario"
@@ -77,11 +77,12 @@ git status
 
 ### git add
 
-Este comando se utiliza para añadir archivos al área de ***stage***, que es la zona donde colocamos los archivos antes de realiar un commit.
+Este comando se utiliza para añadir archivos al área de ***stage***, que es la zona donde colocamos los archivos antes de realizar un commit.
 
 ```bash
 git add
 ```
+
 Detrás de `add` podemos poner el nombre del archivo que queremos añadir. En caso de querer añadirlos todos, podemos poner un punto.
 
 ```bash
@@ -143,7 +144,7 @@ Una vez hecho esto, tendremos creada una nueva rama con la información del comm
 
 ### git switch
 
-Para movernos entre las distintas ramas, tenemos la instrucción `git swtich`.
+Para movernos entre las distintas ramas, tenemos la instrucción `git switch`.
 
 ```bash
 git switch login     
@@ -178,12 +179,13 @@ git merge login
 
 Si al realizar la fusión existiera algún conflicto, Git nos avisaría y tendríamos que resolver el conflicto de forma manual. Existen instrucciones que podrían resolver el conflicto, pero son más avanzadas y no son el objetivo de esta guía.
 
-## Repaso de las instrucciones vistas
+## Instrucciones
 
 En este apartado crearemos una tabla con todas las instrucciones que hemos visto en la guía, para poder utilizarla de forma rápida.
 
 | Instrucción | Apartado                   | Definición                                    |
 |-------------|----------------------------|-----------------------------------------------|
+|git config   | Configuración              | Define valores de configuración               |
 |git init     | Primeros pasos             | Creación de un repositorio                    |
 |git status   | Primeros pasos             | Muestra estado del directorio de trabajo      |
 |git add      | Primeros pasos             | Añade archivos al área de stage               |
@@ -193,3 +195,6 @@ En este apartado crearemos una tabla con todas las instrucciones que hemos visto
 |git switch   | Creación y manejo de ramas | Desplazamiento básico entre ramas             |
 |git checkout | Creación y manejo de ramas | Desplazamiento avanzado entre ramas           |
 |git merge    | Creacion y manejo de ramas | Fusiona dos ramas                             |
+
+
+Estos no son ni mucho menos todos los comandos disponibles en Git, son los que a mi parecer considero indispensables para poder comenzar a trabajar.
