@@ -10,7 +10,7 @@ Dado que la temática es libre, he decidido realizar un tutorial sobre las instr
 
 Actualmente, en la asignatura estamos trabajando con Git y GitHub. Me pareció una buena idea realizar el trabajo sobre Git, ya que mientras ponía en práctica lo aprendido sobre Markdown, también podría afianzar mis conocimientos en Git.
 
-Está guía está lejos de ser la más completa, pues solo he decidido abordar las instrucciones básicas. Realmente  lo que se va a evaluar no es el conocimiento en Git si no el uso del lenguaje Markdown.
+Esta guía esta lejos de ser la más completa, pues solo he decidido abordar las instrucciones básicas. Realmente  lo que se va a evaluar no es el conocimiento en Git si no el uso del lenguaje Markdown.
 
 ## FUENTE
 

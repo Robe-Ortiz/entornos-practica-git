@@ -185,8 +185,15 @@ En este apartado crearemos una tabla con todas las instrucciones que hemos visto
 
 Estos no son ni mucho menos todos los comandos disponibles en Git, son los que a mi parecer considero indispensables para poder comenzar a trabajar.
 
-Esta guía ha sido basada en los conocimientos extraídos del siguiente libro:
+Esta guía ha sido basada en:
+- Los conocimientos extraídos del libro:
 
-> "Git & GitHub desde cero" -Brais Moure
+    > "Git & GitHub desde cero" -Brais Moure
 
-Enlace del libro: [Libro Git & GitHub desde cero](https://leanpub.com/git-github)
+    Enlace del libro: [Libro Git & GitHub desde cero](https://leanpub.com/git-github)
+
+- Lo aprendido en clase con nuestros profesores Javi y Javier.
+
+- La documentación que ofrece GitHub sobre Git:
+
+    [Documentación de Git en GitHub](https://docs.github.com/es/get-started/getting-started-with-git/set-up-git)
