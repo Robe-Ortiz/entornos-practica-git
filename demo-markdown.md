@@ -1,6 +1,8 @@
 # GUÍA PARA EL USO DE GIT
 
-### INTRODUCCIÓN
+![Logotipo de Git](/git_logo.png)
+
+## INTRODUCCIÓN
 
 Este repositorio ha sido creado para realizar un ejercicio de la asignatura Entornos de Desarrollo.
 
@@ -44,12 +46,15 @@ Con esto conseguiremos que cada vez que creemos un repositorio, la rama principa
 
 ## Primeros pasos
 
-Las instrucciones básicas de Git en este apartado son:
+Para el manejo de Git, solo son necesarias una decena de instrucciones. A lo largo de esta guía, veremos las más relevantes e importantes para poder empezar a trabajar con Git.
+
+Instrucciones Git en este apartado:
 
 - `git init`
 - `git status`
 - `git add`
 - `git commit`
+- `git log`
 
 ### git init
 
@@ -103,3 +108,88 @@ Para evitar esto, tenemos la opción `-m` con la cual podremos añadir directame
 git commit -m "Añadido registro de usuarios"
 ```
 Los comentarios en los commit son obligatorios. Debemos, de forma escueta y concisa, definir la razón de ser del commit, como hemos hecho en el ejemplo anterior.
+
+### git log
+
+Al ejecutar este comando, Git muestra una lista con todos los commits realizados en el repositorio, incluyendo el __hash__ único que identifica a cada uno de ellos.
+
+Esta información es útil para rastrear la evolución del proyecto y asegurarnos de que todas los commits se han almaenado según lo esperado.
+
+```bash
+git log
+```
+
+## Creación y manejo de ramas
+
+Uno de los conceptos fundamentales de Git son las ramas, que permiten a los equipos trabajar en diferentes flujos de desarrollo de manera independiente y colaborativa.
+
+Instrucciones de Git en este apartado:
+
+- `git branch`
+- `git switch`
+- `git checkout`
+- `git merge`
+
+### git branch
+
+Para crear una nueva rama en Git, utilizamos el comando `git branch`, seguido del nombre de la nueva rama.
+
+
+```bash
+git branch login
+```
+
+Una vez hecho esto, tendremos creada una nueva rama con la información del commit en el que estábamos ubicados.
+
+### git switch
+
+Para movernos entre las distintas ramas, tenemos la instrucción `git swtich`.
+
+```bash
+git switch login     
+git switch main      
+```
+
+Con estas instrucciones nos hemos desplazado a la rama login y después a la main.
+
+### git checkout
+
+Aunque `git checkout` también puede usarse para moverse entre ramas, `git switch` está diseñado específicamente para esa función.
+
+Además del cambio entre ramas, `git checkout` puede realizar otras funciones como cambiar entre distintos hash, tags y commits.
+
+```bash
+git checkout login
+```
+
+La documentación de Git indica que para cambiar entre ramas por el nombre, debemos de usar `git switch`
+
+### git merge
+
+Las ramas son copias independientes del código base, lo que nos permite trabajar en diferentes características o funcionalidades sin afectar al código principal. Sin embargo, en algún momento será necesario integrar el trabajo realizado en una rama en otra.
+
+Git nos ofrece el comando `git merge` para fusionar los cambios realizados en una rama con otra. Este comando toma los cambios realizados en una rama y los aplica a otra, creando un nuevo commit que combina ambos historiales.
+
+Para realizar un merge, debemos situarnos en la rama destino y utilizar la instrucción indicando la rama de la cual queremos traernos los cambios.
+
+```bash
+git merge login
+```
+
+Si al realizar la fusión existiera algún conflicto, Git nos avisaría y tendríamos que resolver el conflicto de forma manual. Existen instrucciones que podrían resolver el conflicto, pero son más avanzadas y no son el objetivo de esta guía.
+
+## Repaso de las instrucciones vistas
+
+En este apartado crearemos una tabla con todas las instrucciones que hemos visto en la guía, para poder utilizarla de forma rápida.
+
+| Instrucción | Apartado                   | Definición                                    |
+|-------------|----------------------------|-----------------------------------------------|
+|git init     | Primeros pasos             | Creación de un repositorio                    |
+|git status   | Primeros pasos             | Muestra estado del directorio de trabajo      |
+|git add      | Primeros pasos             | Añade archivos al área de stage               |
+|git commit   | Primeros pasos             | Captura instantánea de los cambios preparados |
+|git log      | Primeros pasos             | Muestra listado de commmits realizados        |
+|git branch   | Creación y manejo de ramas | Crea una nueva rama                           |
+|git switch   | Creación y manejo de ramas | Desplazamiento básico entre ramas             |
+|git checkout | Creación y manejo de ramas | Desplazamiento avanzado entre ramas           |
+|git merge    | Creacion y manejo de ramas | Fusiona dos ramas                             |
