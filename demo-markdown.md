@@ -10,8 +10,8 @@ Una herramienta de control de versiones se utiliza para mantener un registro de 
 
 ## Configuración
 
-Es importante tener en cuenta que la instalación de Git varía según el sistema operativo utilizado. Se recomienda visitar la página oficial de Git para encontrar la mejor manera de instalarlo según nuestras especificaciones.
-
+> [!IMPORTANT]
+> Debemos tener en cuenta que la instalación de Git varía según el sistema operativo utilizado. Se recomienda visitar la página oficial de Git para encontrar la mejor manera de instalarlo según nuestras especificaciones.
 [Página oficial de Git](https://git-scm.com/)
 
 Una vez instalado, debemos configurar dos parámetros obligatorios antes de empezar a utilizar Git, para ello podemos abrir la terminar bash que se ha instalado junto a Git y tecleamos las siguientes instrucciones:
