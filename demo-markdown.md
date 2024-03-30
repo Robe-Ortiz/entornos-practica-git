@@ -182,18 +182,5 @@ En este apartado crearemos una tabla con todas las instrucciones que hemos visto
 |git checkout | Creación y manejo de ramas | Desplazamiento avanzado entre ramas           |
 |git merge    | Creacion y manejo de ramas | Fusiona dos ramas                             |
 
-
-Estos no son ni mucho menos todos los comandos disponibles en Git, son los que a mi parecer considero indispensables para poder comenzar a trabajar.
-
-Esta guía ha sido basada en:
-- Los conocimientos extraídos del libro:
-
-    > "Git & GitHub desde cero" -Brais Moure
-
-    Enlace del libro: [Libro Git & GitHub desde cero](https://leanpub.com/git-github)
-
-- Lo aprendido en clase con nuestros profesores Javi y Javier.
-
-- La documentación que ofrece GitHub sobre Git:
-
-    [Documentación de Git en GitHub](https://docs.github.com/es/get-started/getting-started-with-git/set-up-git)
+> [!NOTE]
+> Estos no son ni mucho menos todos los comandos        disponibles en Git, son los que a mi parecer considero indispensables para poder comenzar a trabajar.
